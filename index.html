@@ -26,6 +26,14 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+  <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+  </script>
+    <script type="text/javascript">
+      (function(){
+          emailjs.init("q6kzeSYnm0YEox5kx");
+      })();
+    </script>
 </head>
 
 <body class="index-page">
@@ -113,7 +121,7 @@
             <h3>About Us</h3>
             <h2>Functionsystem: Empowering Businesses Since 2012</h2>
             <p>Functionsystem is a leading technological company committed to transforming industries and empowering businesses through innovative solutions. Founded in 2012, we have been at the forefront of driving digital transformation and revolutionizing the way organizations operate.</p>
-            <p>Headquartered in Silicon Valley, California, we have rapidly expanded our presence globally, serving clients from diverse industries. Our mission is to develop, innovate, and deliver cutting-edge solutions that empower businesses to thrive in the digital age.</p>
+            <p>Headquartered in Silicon Valley, California. we have rapidly expanded our presence globally, serving clients from diverse industries. Our mission is to develop, innovate, and deliver cutting-edge solutions that empower businesses to thrive in the digital age.</p>
             <p>With a focus on advanced technologies and a customer-centric approach, we are dedicated to providing affordable and high-quality digital solutions. We strive to exceed client expectations and drive sustainable growth by harnessing the power of technology.</p>
             <!-- <a href="#" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a> -->
           </div>
@@ -715,8 +723,8 @@
                 <div class="info-item" data-aos="fade" data-aos-delay="200">
                   <i class="bi bi-geo-alt"></i>
                   <h3>Address</h3>
-                  <p>A108 Adam Street</p>
-                  <p>New York, NY 535022</p>
+                  <!-- <p>A108 Adam Street</p> -->
+                  <p>Silicon Valley, California</p>
                 </div>
               </div><!-- End Info Item -->
 
@@ -751,31 +759,31 @@
           </div>
 
           <div class="col-lg-6">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+            <form method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
               <div class="row gy-4">
 
                 <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                  <input type="text" id="name" name="name" class="form-control" placeholder="Your Name" required>
                 </div>
 
                 <div class="col-md-6 ">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+                  <input type="email" id="email" class="form-control" name="email" placeholder="Your Email" required>
                 </div>
 
                 <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Subject" required>
+                  <input type="text" id="subject" class="form-control" name="subject" placeholder="Subject" required>
                 </div>
 
                 <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
+                  <textarea class="form-control" id="message" name="message" rows="6" placeholder="Message" required></textarea>
                 </div>
 
                 <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
+                  <!-- <div class="loading">Loading</div>
                   <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div> -->
 
-                  <button type="submit">Send Message</button>
+                  <button type="submit" onclick="handlesubmit()">Send Message</button>
                 </div>
 
               </div>
@@ -838,8 +846,8 @@
 
         <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
           <h4>Contact Us</h4>
-          <p>A108 Adam Street</p>
-          <p>New York, NY 535022</p>
+          <!-- <p>A108 Adam Street</p> -->
+          <p>Silicon Valley, California</p>
           <p>United States</p>
           <a href="tel:+15187409577" class="mt-4"><strong>Phone:</strong> <span>+1(518)740-9577</span></a>
           <a href="mailto:info@functionsystem.com"><strong>Email:</strong> <span>info@functionsystem.com</span></a>
